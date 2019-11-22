@@ -1,7 +1,7 @@
 .main-container{
 display: flex;
-margin: 40px auto;
-width: 100vw;
+margin: 0 auto;
+width: 90%;
 height: 100vh;
 padding: 20px 20px;
 
@@ -13,13 +13,23 @@ padding: 20px 20px;
 }
 
 .show-container{
-margin: 50px 50px;
-width: 100vw;
+margin: 20px auto;
+width: 80%;
 height: 100vh;
 padding: 20px 20px;
 
 }
 
-.alt-container{
-
+.show-image{
+width: 100%;
+height: 400px;
+margin: 0 auto;
+background-size: cover;
+background-position: center;
 }
+
+
+// .bckgrnd{
+//  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1560008426-2379b5179a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1570&q=80');
+//  opacity: 0.6;
+// }

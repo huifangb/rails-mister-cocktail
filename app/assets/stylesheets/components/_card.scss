@@ -15,12 +15,11 @@
 
 .card {
   margin: 10px;
-  width: 28%;
+  // width:25%;
   flex-grow: 0;
-  background-image: url("cocktail.image");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 350px;
   border-radius: 1px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: flex;
@@ -31,12 +30,16 @@
   text-align: center;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+  a{
+    color: white;
+  }
 }
 
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 20px;
   flex-grow: 1;
   padding: 10px;
 }
@@ -44,4 +47,13 @@
 .card image{
   width: 200px;
   height: 300px;
+}
+
+.card-description{
+  margin: 20px auto;
+
+h5{
+ margin-top: 20px;
+}
+
 }

@@ -1,11 +1,12 @@
 .navbar-custom {
   justify-content: space-between;
-  background: transparent;
+  background: #d2d4d8;
   transition: .5s background-color ease;
 }
 
 .navbar-custom-white {
   background-color: white;
+  color: black;
 }
 
 .navbar-custom .navbar-collapse {
@@ -18,7 +19,7 @@
 
 .navbar-custom .formSearch {
   width: 300px;
-  float: left;
+  float: right;
   display: block;
   position: absolute;
   padding-top: 7px;
