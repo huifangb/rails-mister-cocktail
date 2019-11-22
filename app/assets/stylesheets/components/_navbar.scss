@@ -1,0 +1,25 @@
+.navbar-custom {
+  justify-content: space-between;
+  background: transparent;
+  transition: .5s background-color ease;
+}
+
+.navbar-custom-white {
+  background-color: white;
+}
+
+.navbar-custom .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-custom .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-custom .formSearch {
+  width: 300px;
+  float: left;
+  display: block;
+  position: absolute;
+  padding-top: 7px;
+}

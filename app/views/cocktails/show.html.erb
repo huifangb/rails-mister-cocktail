@@ -1,0 +1,32 @@
+<div class="show-container">
+  <div class="alt-container">
+    <%= image_tag "#{@cocktail.image}"%>
+    <h4>
+      <%= "Cocktail : #{@cocktail.name}" %>
+    </h4>
+    <h5>
+      Ingredients :
+    </h5>
+    <p>
+      <% @doses.each do |dose| %>
+        <p>
+          <%= "description: #{dose.description}" %>
+        </p>
+      <% end %>
+    </p>
+  </div>
+  <div class="opt-container">
+    <p>
+      <%= link_to "Delete", cocktail_path(@cocktail.id), method: :delete, data: {confirm: 'Are you sure?'} %> </p>
+    <p>
+      <%=link_to "Add ingredients", new_cocktail_dose_path(@cocktail.id)%>
+    </p>
+  </div>
+  <p>
+    <%=link_to "Homepage", cocktails_path%>
+  </p>
+</div>
+<%# @doses.each do |dose| %>
+  <%#= "name: #{@cocktail.name}" %>
+  <%#= "description: #{dose.description}" %>
+  <%# end %>
