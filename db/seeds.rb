@@ -21,16 +21,32 @@ Ingredient.destroy_all
 # i1 = Ingredient.create(name: "lemon")
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
-6.times do
-  c = Cocktail.create!(name: Faker::Name.unique.name,
-                       image: "https://source.unsplash.com/270x300/?cocktail")
-  i = Ingredient.create(name: Faker::Dessert.flavor)
-  Dose.create!(description: Faker::Food.description,
-               cocktail: c, ingredient: i)
 
-end
+c1= Cocktail.create(name: "Singapore Sling", image: "https://res.cloudinary.com/fangb/image/upload/v1574391352/cocktail/photo-1551734322-f43b0798585a_q1suf4.jpg")
+c2= Cocktail.create(name: "Negroni", image: "https://res.cloudinary.com/fangb/image/upload/v1574393407/cocktail/olena-sergienko-JjGLEN7T8xI-unsplash_lb1d9k.jpg")
+c3=Cocktail.create(name: "Gin Martini", image: "https://res.cloudinary.com/fangb/image/upload/v1574393404/cocktail/photo-1544145945-f90425340c7e_b7mnmy.jpg")
+
+i1= Ingredient.create(name: "Lemon")
+i2= Ingredient.create(name: "Campari")
+i3= Ingredient.create(name: "gin")
+i4= Ingredient.create(name: "orange")
+i5= Ingredient.create(name: "vodka")
+i6= Ingredient.create(name: "vanilla extract")
+i7= Ingredient.create(name: "Grand Marnier")
+i8= Ingredient.create(name: "Tea")
+i9= Ingredient.create(name: "sugar syrup")
 
 
+# 6.times do
+#   c = Cocktail.create!(name: Faker::Name.unique.name,
+#                        image: "https://source.unsplash.com/270x300/?cocktail")
+#   i = Ingredient.create(name: Faker::Dessert.flavor)
+#   Dose.create!(description: Faker::Food.description,
+#                cocktail: c, ingredient: i)
+
+# end
+
+d1 = Dose.create!(description: "2 shots of lemon", cocktail: c1, ingredient: i1)
 # c1 = Cocktail.create(name: "Mojito" )
 # c2 = Cocktail.create(name: "ILT" )
 # Dose.create!(description: "2 shots of lemon", cocktail: c1, ingredient: i1)
