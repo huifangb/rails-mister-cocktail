@@ -1,12 +1,15 @@
+<div class="heading">
+  <h1>Ingredients</h1>
+</div>
 <div class="main-container">
   <div class="container">
     <div class="bckgrnd">
-      <div class="row">
+      <div class=" ">
         <div class="col-xs-12 offset-sm-2 col-sm-8 ">
           <%= simple_form_for [@cocktail, @dose] do |f| %>
             <%= f.association :ingredient%>
             <%= f.input :description %>
-            <%= f.submit "add ingredient", class: "btn btn-primary" %>
+            <%= f.submit "add ingredient", class: "btn btn-ghost border-dark rounded-lg" %>
           </div>
         <% end %>
       </div>

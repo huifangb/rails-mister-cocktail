@@ -26,7 +26,9 @@ Ingredient.destroy_all
 # Ingredient.create(name: "mint leaves")
 
 c1= Cocktail.create(name: "Singapore Sling", remote_image_url: "https://res.cloudinary.com/fangb/image/upload/v1574391352/cocktail/photo-1551734322-f43b0798585a_q1suf4.jpg")
+
 c2= Cocktail.create(name: "Negroni", remote_image_url: "https://res.cloudinary.com/fangb/image/upload/v1574393407/cocktail/olena-sergienko-JjGLEN7T8xI-unsplash_lb1d9k.jpg")
+
 c3=Cocktail.create(name: "Gin Martini", remote_image_url: "https://res.cloudinary.com/fangb/image/upload/v1574393404/cocktail/photo-1544145945-f90425340c7e_b7mnmy.jpg")
 
 i1= Ingredient.create(name: "Lemon")
@@ -38,6 +40,9 @@ i6= Ingredient.create(name: "vanilla extract")
 i7= Ingredient.create(name: "Grand Marnier")
 i8= Ingredient.create(name: "Tea")
 i9= Ingredient.create(name: "sugar syrup")
+i10= Ingredient.create(name: "mint leaves")
+i11= Ingredient.create(name: "soda water")
+i12= Ingredient.create(name: "lime")
 
 
 # 6.times do
