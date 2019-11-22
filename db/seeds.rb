@@ -43,6 +43,8 @@ i9= Ingredient.create(name: "sugar syrup")
 i10= Ingredient.create(name: "mint leaves")
 i11= Ingredient.create(name: "soda water")
 i12= Ingredient.create(name: "lime")
+i13= Ingredient.create(name: "red wine")
+i14= Ingredient.create(name: "fruits")
 
 
 # 6.times do
